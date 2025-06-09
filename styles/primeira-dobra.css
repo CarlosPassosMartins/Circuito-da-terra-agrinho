@@ -40,3 +40,9 @@ h1 span:last-child {
     font-family: 'Pacifico', cursive;
     font-size: clamp(1.5rem, 6vw, 4rem);
 }
+
+@media (max-width: 768px) {
+    .primeira-dobra{
+        aspect-ratio: 1440/50;
+    }
+}
