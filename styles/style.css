@@ -2,6 +2,7 @@
 /* compilação de styles*/
 @import url(menu-fixo.css);
 @import url(primeira-dobra.css);
+@import url(carrosel.css);
 
 /* fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -16,24 +17,37 @@
     --tma-menu: 50px;
 
 
-    /* cores tema claro */
+    /* CORES TEMA CLARO */
     --icon-theme: url('../img/icons/modo-claro.svg');
+    --bg-color: #F0F0F0;
+
+    /* primeira dobra */
     --primeira-dobra-img: url('../img/background/primeira-dobra\ claro.jpg');
     --primeira-dobra-circuito: #333;
     --primeira-dobra-da-terra: #6B8E23;
+
+    /* carrosel */
+    --carrosel-bg-colocar: #D9D9D9;
     
-    --bg-color: #F0F0F0;
+    
     
 }
 
 :root:has(#modo-theme:checked){
-    /*cores tema escuro*/
+    /*CORES TEMA ESCURO*/
     --icon-theme: url('../img/icons/modo-escuro.svg');
+    --bg-color: #0B1D3E;
+
+    /* primeira dobra */
     --primeira-dobra-img: url('../img/background/primeira-dobra\ escuro.jpg');
     --primeira-dobra-circuito: #fff;
     --primeira-dobra-da-terra: #B8E986;
+
+    /* carrosel */
+    --carrosel-bg-colocar: #000B24;
     
-    --bg-color: #0B1D3E;
+    
+    
 }
 
 *{
@@ -45,6 +59,10 @@ body{
     transition: 0.3s;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
+}
+
+.no-select {
+  user-select: none;
 }
 
 .mobile{

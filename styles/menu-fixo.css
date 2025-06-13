@@ -61,10 +61,6 @@ header a:hover , header label:hover{
     user-select: none;
 }
 
-.no-select {
-  user-select: none;
-}
-
 #menu-hamburguer{
     display: none;
 }

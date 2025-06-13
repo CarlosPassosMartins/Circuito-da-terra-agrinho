@@ -1,0 +1,160 @@
+.carrossel{
+  padding: 10px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--carrosel-bg-colocar);
+}
+
+.carousel-container {
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.carrossel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ============ MODO DE CELULAR ============ */
+
+.carousel-mobile {
+  display: none;
+}
+
+.carousel-mobile input[type="radio"] {
+  display: none;
+}
+
+.carousel-mobile .slides {
+  display: flex;
+  width: 500%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-mobile .slide {
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.carousel-mobile .navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-mobile .nav-dot {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0 5px;
+  background: #f9f9f9;
+  border: solid black 1px;
+  box-shadow: 0 0 5px black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#m1:checked ~ .slides { transform: translateX(0%); }
+#m2:checked ~ .slides { transform: translateX(-20%); }
+#m3:checked ~ .slides { transform: translateX(-40%); }
+#m4:checked ~ .slides { transform: translateX(-60%); }
+#m5:checked ~ .slides { transform: translateX(-80%); }
+#m6:checked ~ .slides { transform: translateX(-100%); }
+
+#m1:checked ~ .navigation label[for="m1"],
+#m2:checked ~ .navigation label[for="m2"],
+#m3:checked ~ .navigation label[for="m3"],
+#m4:checked ~ .navigation label[for="m4"],
+#m5:checked ~ .navigation label[for="m5"],
+#m6:checked ~ .navigation label[for="m6"] {
+  background: #ff9900;
+}
+
+/* ============ MODO DE PC ============ */
+.carousel-desktop {
+  display: block;
+  overflow: hidden;
+  width: 200%;
+  position: relative;
+}
+
+.carousel-desktop .slides {
+  display: flex;
+  width: calc(100% * 2);
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-desktop .slide {
+  width: 25%;
+  padding: 0 5px;
+}
+
+.carousel-desktop input[type="radio"] {
+  display: none;
+}
+
+.desktop-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+/* Estado dos slides */
+#d1:checked ~ .carousel-desktop .slides {
+  transform: translateX(0%);
+}
+
+#d2:checked ~ .carousel-desktop .slides {
+  transform: translateX(-33.333%);
+}
+
+/* mostrar os botao so quando necessario */
+#d1:checked ~ .left-btn {
+  display: none;
+}
+
+#d2:checked ~ .right-btn {
+  display: none;
+}
+
+    /* ============ RESPONSIVIDADE ============ */
+@media (max-width: 768px) {
+  .carousel-mobile {
+    display: block;
+  }
+  .carousel-desktop,
+  .left-btn,
+  .right-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-mobile {
+    display: none;
+  }
+  .carousel-desktop {
+    display: flex;
+  }
+}

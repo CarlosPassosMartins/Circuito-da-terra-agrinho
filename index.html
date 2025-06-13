@@ -55,8 +55,55 @@
             </h1>
         </section>
 
-        
-        <section class="container"></section>
+        <section class="carrossel">
+            <div class="carousel-container">
+                    <!-- MODO DE CELULAR -->
+                <div class="carousel-mobile">
+                    <input type="radio" name="mobile-slide" id="m1" checked>
+                    <input type="radio" name="mobile-slide" id="m2">
+                    <input type="radio" name="mobile-slide" id="m3">
+                    <input type="radio" name="mobile-slide" id="m4">
+                    <input type="radio" name="mobile-slide" id="m5">
+                    <input type="radio" name="mobile-slide" id="m6">
+
+                    <div class="slides">
+                        <div class="slide"><img src="img/test/t.webp" alt="Imagem 1"></div>
+                        <div class="slide"><img src="img/test/t.webp" alt="Imagem 2"></div>
+                        <div class="slide"><img src="img/test/t.webp" alt="Imagem 3"></div>
+                        <div class="slide"><img src="img/test/t.webp" alt="Imagem 4"></div>
+                        <div class="slide"><img src="img/test/t.webp" alt="Imagem 5"></div>
+                        <div class="slide"><img src="img/test/t.webp" alt="Imagem 6"></div>
+                    </div>
+
+                    <div class="navigation">
+                        <label class="nav-dot" for="m1"></label>
+                        <label class="nav-dot" for="m2"></label>
+                        <label class="nav-dot" for="m3"></label>
+                        <label class="nav-dot" for="m4"></label>
+                        <label class="nav-dot" for="m5"></label>
+                        <label class="nav-dot" for="m6"></label>
+                    </div>
+                </div>
+
+                <!-- MODO DE COMPUTADOR-->
+                <input style="display: none;" type="radio" name="desktop-slide" id="d1" checked>
+                <input style="display: none;"  type="radio" name="desktop-slide" id="d2">
+
+                <label for="d1" class="desktop-nav-button left-btn" title="voltar">&#10094;</label>
+                <label for="d2" class="desktop-nav-button right-btn" title="proximo">&#10095;</label>
+
+                <div class="carousel-desktop">
+                    <div class="slides">
+                        <div class="slide"><img src="img/test/t.webp" alt=""></div>
+                        <div class="slide"><img src="img/test/t.webp" alt=""></div>
+                        <div class="slide"><img src="img/test/t.webp" alt=""></div>
+                        <div class="slide"><img src="img/test/t.webp" alt=""></div>
+                        <div class="slide"><img src="img/test/t.webp" alt=""></div>
+                        <div class="slide"><img src="img/test/t.webp" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
