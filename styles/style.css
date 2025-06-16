@@ -12,7 +12,7 @@
 
 :root{
 
-    /* CORES TEMA CLARO */
+    /* CORES TEMA PADRÃO */
     --title: #48640e;
     --bg-container: #D9D9D9;
     --icon-theme: url('../img/icons/modo-claro.svg');
@@ -28,12 +28,12 @@
     /* primeira dobra */
     --primeira-dobra-img: url('../img/background/primeira-dobra\ claro.jpg');
     --primeira-dobra-circuito: #333;
-    --primeira-dobra-verde: #6B8E23; /* tambem serve para titulos*/
+    --primeira-dobra-verde: #6B8E23;
 
 }
 
 :root:has(#modo-theme:checked){
-    /*CORES TEMA ESCURO*/
+    /*CORES TEMA CONTRASTE*/
     --title: #fff;
     --bg-container: #000B24;
     --icon-theme: url('../img/icons/modo-escuro.svg');
