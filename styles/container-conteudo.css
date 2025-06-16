@@ -1,0 +1,74 @@
+:root {
+  --fonte-tamanho: 1.2rem;
+  --largura-maxima: 1200px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: var(--largura-maxima);
+  margin: 5% auto;
+  padding: 5%;
+  background-color: var(--bg-color); /* <- adicionado aqui */
+  border-radius: 12px; /* opcional, para separar os blocos melhor */
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.container-inverso {
+  flex-direction: row-reverse;
+}
+
+.container-coluna {
+  flex-direction: column;
+  text-align: center; /* para centralizar no desktop também */
+}
+
+.texto {
+  flex: 1;
+  font-size: var(--fonte-tamanho);
+  line-height: 1.6;
+  min-width: 280px;
+}
+
+.imagem {
+  flex: 1;
+  min-width: 280px;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container-flex,
+  .container-inverso,
+  .container-coluna {
+    flex-direction: column !important;
+    text-align: left;
+  }
+
+  .container-coluna {
+    text-align: center;
+  }
+
+  .imagem img {
+    margin: 1rem auto; /* centraliza imagem no mobile */
+  }
+}
