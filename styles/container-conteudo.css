@@ -54,7 +54,6 @@
     .container-inverso,
     .container-coluna {
         flex-direction: column !important;
-        text-align: left;
         text-align: center
     }
 
@@ -62,3 +61,5 @@
         margin: 1rem auto;
     }
 }
+
+

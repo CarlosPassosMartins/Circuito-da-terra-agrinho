@@ -1,0 +1,41 @@
+[data-referencia] {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+[data-referencia] img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+[data-referencia]::after {
+    content: attr(data-referencia);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    border-top-right-radius: 8px;
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+[data-referencia]:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
