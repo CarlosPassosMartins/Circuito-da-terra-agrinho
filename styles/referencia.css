@@ -39,3 +39,9 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+[data-referencia]:focus::after {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
