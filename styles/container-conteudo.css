@@ -55,10 +55,7 @@
     .container-coluna {
         flex-direction: column !important;
         text-align: left;
-    }
-
-    .container-coluna {
-        text-align: center;
+        text-align: center
     }
 
     .imagem img {
