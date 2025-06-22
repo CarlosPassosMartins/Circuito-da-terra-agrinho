@@ -1,0 +1,75 @@
+footer {
+    background-color: #202020;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 40px;
+}
+
+.footer-topo {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #2a2a2a;
+}
+
+.btn-voltar {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Parte de baixo */
+.footer-info {
+    padding: 20px;
+}
+
+/* Logo + primeira info */
+.info-com-logo {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    height: 50px;
+}
+
+/* Nome do autor */
+.autor {
+    font-weight: bold;
+}
+
+/* Lista */
+.lista-footer {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.lista-footer li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsivo para telas maiores */
+@media (min-width: 768px) {
+    .footer-info {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .lista-footer {
+        flex: 1;
+    }
+}

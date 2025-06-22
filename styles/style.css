@@ -5,6 +5,7 @@
 @import url(carrosel.css);
 @import url(container-conteudo.css);
 @import url(referencia.css);
+@import url(footer.css);
 
 /* fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -49,9 +50,15 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;  
 }
 
 body{

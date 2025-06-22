@@ -126,7 +126,7 @@
 }
 
 #d2:checked ~ .carousel-desktop .slides {
-  transform: translateX(-33.333%);
+  transform: translateX(-50%);
 }
 
 /* mostrar os botao so quando necessario */

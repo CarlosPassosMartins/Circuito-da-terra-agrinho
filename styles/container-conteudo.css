@@ -48,6 +48,10 @@
     display: block;
 }
 
+.scroll-ajustado {
+  scroll-margin-top: var(--tma-menu);
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .container-flex,
