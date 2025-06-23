@@ -4,12 +4,12 @@
 
 ## 📚 Navegação Rápida
 
-- [📌 Sobre o Projeto](#📌-sobre-o-projeto)
-- [🧠 Temas abordados](#🧠-temas-abordados)
-- [🖥️ Tecnologias Utilizadas](#🖥️-tecnologias-utilizadas)
-- [🌗 Funcionalidades](#🌗-funcionalidades)
-- [🧑‍💻 Autor](#🧑‍💻-autor)
-- [🤝 Agradecimentos](#🤝-agradecimentos)
+- [📌 Sobre o Projeto](#-sobre-o-projeto)
+- [🧠 Temas abordados](#-temas-abordados)
+- [🖥️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [🌗 Funcionalidades](#-funcionalidades)
+- [🧑‍💻 Autor](#-autor)
+- [🤝 Agradecimentos](#-agradecimentos)
 
 
 ## 📌 Sobre o Projeto
